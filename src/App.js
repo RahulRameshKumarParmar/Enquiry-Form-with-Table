@@ -91,9 +91,10 @@ function App() {
               <p>Total Entries: {userData.length}</p>
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="pb-3 text-start">
-                  <Form.Label>Name</Form.Label>
+                  <Form.Label htmlFor="name">Name</Form.Label>
                   <Form.Control
                     type="text"
+                    id="name"
                     name="uName"
                     value={formData.uName}
                     onChange={getValue}
@@ -101,9 +102,10 @@ function App() {
                 </Form.Group>
 
                 <Form.Group className="pb-3 text-start">
-                  <Form.Label>Email</Form.Label>
+                  <Form.Label htmlFor='email'>Email</Form.Label>
                   <Form.Control
                     type="email"
+                    id='email'
                     name="uEmail"
                     value={formData.uEmail}
                     onChange={getValue}
@@ -111,9 +113,10 @@ function App() {
                 </Form.Group>
 
                 <Form.Group className="pb-3 text-start">
-                  <Form.Label>Phone</Form.Label>
+                  <Form.Label htmlFor='phone'>Phone</Form.Label>
                   <Form.Control
                     type="text"
+                    id='phone'
                     name="uPhone"
                     value={formData.uPhone}
                     onChange={getValue}
@@ -121,9 +124,10 @@ function App() {
                 </Form.Group>
 
                 <Form.Group className="pb-3 text-start">
-                  <Form.Label>Message</Form.Label>
+                  <Form.Label htmlFor='textarea'>Message</Form.Label>
                   <Form.Control
                     as="textarea"
+                    id='textarea'
                     rows={3}
                     name="uMessage"
                     value={formData.uMessage}
